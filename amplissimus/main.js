@@ -26,3 +26,9 @@ function closeNav() {
 		getById("headerText").style.letterSpacing = letterSpacing;
 	}, 200);
 }
+
+function toggleDarkMode() {
+	var element = document.body;
+  	element.classList.toggle("dark-mode");
+	closeNav();
+}

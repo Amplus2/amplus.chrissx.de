@@ -12,9 +12,9 @@
 </head>
 
 <body>
-	<header class="main__header" id="mainHeader">
+	<header class="header" id="mainHeader">
 		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-		<script src="nav.js"></script>
+		<script src="main.js"></script>
 		<lottie-player alt="logo" src="logo.json" background="transparent" speed="1" autoplay></lottie-player>
 		<div><p class="unselectable" id="headerText">Amplissimus</p></div>
 		<div id="mainSideNav" class="sidenav">
@@ -24,11 +24,13 @@
 			<a href="#" onclick="closeNav()">WebApp</a>
 			<a target="_blank" href="https://github.com/Amplissimus/Amplissimus/issues/new/choose" onclick="closeNav()">Bugreport</a>
 		    <a href="mailto:amplus@chrissx.de?subject=Kontakt/Feedback%20zu%20Amplus/Amplissimus" onclick="closeNav()">Kontakt</a>
+			<p></p>
+			<a href="#" onclick="toggleDarkMode()">Modus wechseln</a>
 		</div>
 		<div onclick="openNav()" class="nav_drawer_icon_div" id="navDrawerIconDiv"><img src="nav_drawer_icon.svg" alt="nav_drawer_icon" height="30" id="navDrawerIcon"></div>
 	</header>
-	<div class="main__body__container" id="mainBody">
-		<div class="home__section" id="home">
+	<div class="main_body_container" id="mainBody">
+		<div class="section" id="homeSection">
 			<p>Diese Webseite befindet sich derzeit im Aufbau. Bei Fragen wenden Sie sich bitte an info@ludwig-lehnert.de. Mit einer zeitnahen Antwort ist nicht zu rechnen.</p>
 		</div>
 	</div>
