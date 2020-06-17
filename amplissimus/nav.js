@@ -1,17 +1,28 @@
 var letterSpacing = "20px";
+
+function getById(id) {
+	return document.getElementById(id);
+}
+
 function openNav() {
-	letterSpacing = document.getElementById("headerText").style.letterSpacing;
-	document.getElementById("headerText").style.letterSpacing = "0";
-	document.getElementById("mainHeader").style.marginRight = "250px";
-  	document.getElementById("mainSideNav").style.width = "250px";
-  	document.getElementById("mainBody").style.marginRight = "250px";
-	document.getElementById("mainBody").style.marginLeft = "-250px";
+	letterSpacing = getById("headerText").style.letterSpacing;
+	getById("headerText").style.letterSpacing = "0";
+	getById("mainHeader").style.marginRight = "250px";
+  	getById("mainSideNav").style.width = "250px";
+  	getById("mainBody").style.marginRight = "250px";
+	getById("mainBody").style.marginLeft = "-250px";
+	getById("navDrawerIcon").setAttribute('style','transform:rotate(90deg)');
+	getById("navDrawerIconDiv").setAttribute('style','margin-top:-300px');
 }
 
 function closeNav() {
-	document.getElementById("mainHeader").style.marginRight = "0";
-  	document.getElementById("mainSideNav").style.width = "0";
-  	document.getElementById("mainBody").style.marginRight = "0";
-	document.getElementById("mainBody").style.marginLeft = "0";
-	setTimeout(() => { document.getElementById("headerText").style.letterSpacing = letterSpacing;}, 200);
+	getById("mainHeader").style.marginRight = "0";
+  	getById("mainSideNav").style.width = "0";
+  	getById("mainBody").style.marginRight = "0";
+	getById("mainBody").style.marginLeft = "0";
+	getById("navDrawerIcon").setAttribute('style','transform:rotate(0deg)');
+	getById("navDrawerIconDiv").setAttribute('style','margin-top:-0px');
+	setTimeout(() => { 
+		getById("headerText").style.letterSpacing = letterSpacing;
+	}, 200);
 }

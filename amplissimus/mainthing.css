@@ -104,6 +104,9 @@ html {
 	background-color: grey;
 	transition-duration: 500ms;
 }
+.nav_drawer_icon_div {
+	transition-duration: 500ms;
+}
 @media screen and (max-width:319px) {
 	.main__header div p {
 		margin: 5px;
