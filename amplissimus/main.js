@@ -3,6 +3,9 @@ var letterSpacing = "20px";
 function getById(id) {
 	return document.getElementById(id);
 }
+function getByClass(className) {
+	return document.getElementsByClassName(className);
+}
 
 function openNav() {
 	letterSpacing = getById("headerText").style.letterSpacing;
@@ -28,7 +31,8 @@ function closeNav() {
 }
 
 function toggleDarkMode() {
-	var element = document.body;
-  	element.classList.toggle("dark-mode");
+	getById("headerText").classList.toggle("dark-mode-foreground");
+	getById("mainHeader").classList.toggle("dark-mode-background");
+  	document.body.classList.toggle("dark-mode-background");
 	closeNav();
 }
