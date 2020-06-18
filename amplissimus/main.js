@@ -1,6 +1,7 @@
 var letterSpacing = "20px";
 var isDarkMode = false;
 
+
 function getById(id) {
 	return document.getElementById(id);
 }
@@ -12,7 +13,7 @@ function openNav() {
 	letterSpacing = getById("headerText").style.letterSpacing;
 	getById("headerText").style.letterSpacing = "0";
 	getById("mainHeader").style.marginRight = "250px";
-  	getById("mainSideNav").style.width = "250px";
+  	getById("mainNav").style.width = "250px";
   	getById("mainBody").style.marginRight = "250px";
 	getById("mainBody").style.marginLeft = "-250px";
 	getById("navDrawerIcon").setAttribute('style','transform:rotate(90deg)');
@@ -21,7 +22,7 @@ function openNav() {
 
 function closeNav() {
 	getById("mainHeader").style.marginRight = "0";
-  	getById("mainSideNav").style.width = "0";
+  	getById("mainNav").style.width = "0";
   	getById("mainBody").style.marginRight = "0";
 	getById("mainBody").style.marginLeft = "0";
 	getById("navDrawerIcon").setAttribute('style','transform:rotate(0deg)');
