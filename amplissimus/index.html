@@ -15,7 +15,7 @@
 	<header class="header" id="mainHeader">
 		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 		<script src="main.js"></script>
-		<lottie-player alt="logo" src="logo.json" background="transparent" speed="1" autoplay></lottie-player>
+		<lottie-player class="unselectable" alt="logo" src="logo.json" background="transparent" speed="1" autoplay></lottie-player>
 		<div><p class="unselectable header_text paragraph" id="headerText">Amplissimus</p></div>
 		<div id="mainSideNav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">zurück</a>
@@ -27,7 +27,7 @@
 			<p></p>
 			<a href="#" onclick="toggleDarkMode()">Modus wechseln</a>
 		</div>
-		<div onclick="openNav()" class="nav_drawer_icon_div" id="navDrawerIconDiv"><img src="nav_drawer_icon.svg" alt="nav_drawer_icon" height="30" id="navDrawerIcon"></div>
+		<div onclick="openNav()" class="nav_drawer_icon_div unselectable" id="navDrawerIconDiv"><img src="nav_drawer_icon.svg" alt="nav_drawer_icon" height="30" id="navDrawerIcon"></div>
 	</header>
 	<div class="main_body_container" id="mainBody">
 		<div class="section" id="homeSection">
