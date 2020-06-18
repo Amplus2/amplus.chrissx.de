@@ -1,2 +1,2 @@
 # amplus.chrissx.de
-the website of amplissimus
+the website of amplus
