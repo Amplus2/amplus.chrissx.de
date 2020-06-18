@@ -33,7 +33,7 @@ function closeNav() {
 
 function toggleDarkMode() {
 	isDarkMode = !isDarkMode;
-	document.querySelector("meta[name=theme-color]").setAttribute("content", isDarkMode ? "#111" : "#E8E8E8";
+	document.querySelector("meta[name=theme-color]").setAttribute("content", isDarkMode ? "#111" : "#E8E8E8");
 	getById("mainHeader").style.backgroundColor = isDarkMode ? "#111" : "#E8E8E8";
 	getById("navDrawerIcon").classList.toggle("dark-mode-foreground-svg");
 	document.body.classList.toggle("dark-mode-background");
