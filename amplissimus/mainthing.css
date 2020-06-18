@@ -270,7 +270,7 @@ html {
 	.nav_drawer_icon_div img {
 		padding-right: 30px;
 		padding-top: 5px;
-		height: 65px;
+		height: 55px;
 		transition-duration: 300ms;
 	}
 	.sidenav ul {
@@ -302,10 +302,10 @@ html {
 		padding-top: unset;
 		right: unset;
 		top: unset;
-		height: unset;
+		height: 55px;
 		width: 100%;
 		position: fixed;
-		background-color: #111;
+		background-color: #E8E8E8;
 		transition-duration: 500ms;
 		overflow: hidden;
     	text-align: center;

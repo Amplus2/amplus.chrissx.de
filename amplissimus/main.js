@@ -1,5 +1,6 @@
 var letterSpacing = "20px";
 var isDarkMode = false;
+var navIsClosed = false;
 
 
 function getById(id) {
@@ -9,23 +10,39 @@ function getByClass(className) {
 	return document.getElementsByClassName(className);
 }
 
+function updateHeight() {
+	if(window.innerWidth < 1130) getById("mainNav").style.height = "100%";
+	else getById("mainNav").style.height = "55px";
+	navIsClosed = false;
+}
+
+function onLoad() {
+	window.onresize = updateHeight();
+}
+
 function openNav() {
-	if(screen.width >= 1130) return;
+	if(window.innerWidth > 1129) {
+		if(navIsClosed) getById("mainNav").style.height = "55px";
+		else getById("mainNav").style.height = "0px";
+		navIsClosed = !navIsClosed;
+		return;
+	}
 	letterSpacing = getById("headerText").style.letterSpacing;
 	getById("headerText").style.letterSpacing = "0";
 	getById("mainHeader").style.marginRight = "250px";
-  	getById("mainNav").style.width = "250px";
-  	getById("mainBody").style.marginRight = "250px";
+	getById("mainNav").style.width = "250px";
+	getById("mainNav").style.height = "100%";
+	getById("mainBody").style.marginRight = "250px";
 	getById("mainBody").style.marginLeft = "-250px";
 	getById("navDrawerIcon").setAttribute('style','transform:rotate(90deg)');
 	getById("navDrawerIconDiv").setAttribute('style','margin-top:-300px');
 }
 
 function closeNav() {
-	if(screen.width >= 1130) return;
+	if(window.innerWidth > 1129) return;
 	getById("mainHeader").style.marginRight = "0";
-  	getById("mainNav").style.width = "0";
-  	getById("mainBody").style.marginRight = "0";
+	getById("mainNav").style.width = "0";
+	getById("mainBody").style.marginRight = "0";
 	getById("mainBody").style.marginLeft = "0";
 	getById("navDrawerIcon").setAttribute('style','transform:rotate(0deg)');
 	getById("navDrawerIconDiv").setAttribute('style','margin-top:-0px');
@@ -46,7 +63,7 @@ function toggleDarkMode() {
 	}
 	var sections = getByClass("section");
 	for (var i = 0; i<sections.length; i++){
-		 isDarkMode ? sections[i].style.backgroundColor = "#111" : sections[i].style.backgroundColor = "#D3D3D3";
+		isDarkMode ? sections[i].style.backgroundColor = "#111" : sections[i].style.backgroundColor = "#D3D3D3";
 	}
 	closeNav();
 }
