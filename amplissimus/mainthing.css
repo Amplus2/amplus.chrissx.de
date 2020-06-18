@@ -52,6 +52,12 @@ html {
 .body {
 	transition-duration: 500ms;
 }
+.menu-item-bright:hover {
+	color: black;
+}
+.menu-item-dark:hover {
+	color: white;
+}
 
 
 .sidenav ul li a {
@@ -63,9 +69,6 @@ html {
 	font-family: 'Arial Verdana', sans-serif;
 	transition-property: color;
 	transition-duration: 300ms;
-}
-.sidenav ul li a:hover {
-	color: #f1f1f1;
 }
 .sidenav .closebtn {
 	position: absolute;
@@ -291,9 +294,6 @@ html {
 		font-family: 'Arial Verdana', sans-serif;
 		transition-property: color;
 		transition-duration: 300ms;
-	}
-	.sidenav ul li a:hover {
-		color: #f1f1f1;
 	}
 	.sidenav .closebtn {
 		display: none;
