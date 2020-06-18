@@ -20,6 +20,10 @@ html {
 	color: white;
 	background: black;
 }
+.dark-mode-foreground::selection {
+	color: black;
+	background: white;
+}
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -113,6 +117,7 @@ html {
 	justify-content: space-between;
 	align-items: center;
 	transition-duration: 500ms;
+	background-color: #E8E8E8;
 }
 .nav_drawer_icon_div {
 	transition-duration: 500ms;
