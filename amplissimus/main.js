@@ -1,4 +1,5 @@
 var letterSpacing = "20px";
+var isDarkMode = false;
 
 function getById(id) {
 	return document.getElementById(id);
@@ -31,8 +32,16 @@ function closeNav() {
 }
 
 function toggleDarkMode() {
-	getById("headerText").classList.toggle("dark-mode-foreground");
-	getById("mainHeader").classList.toggle("dark-mode-background");
+	isDarkMode = !isDarkMode;
+	getById("navDrawerIcon").classList.toggle("dark-mode-foreground-svg");
   	document.body.classList.toggle("dark-mode-background");
+	var paragraphs = getByClass("paragraph");
+	for (var i = 0;i < paragraphs.length; i++){
+		 paragraphs[i].classList.toggle("dark-mode-foreground");
+	}
+	var sections = getByClass("section");
+	for (var i = 0;i < sections.length; i++){
+		 isDarkMode ? sections[i].style.backgroundColor = "#111" : sections[i].style.backgroundColor = "#D3D3D3";
+	}
 	closeNav();
 }
