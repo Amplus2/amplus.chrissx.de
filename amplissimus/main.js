@@ -10,6 +10,7 @@ function getByClass(className) {
 }
 
 function openNav() {
+	if(screen.width >= 1130) return;
 	letterSpacing = getById("headerText").style.letterSpacing;
 	getById("headerText").style.letterSpacing = "0";
 	getById("mainHeader").style.marginRight = "250px";
@@ -21,6 +22,7 @@ function openNav() {
 }
 
 function closeNav() {
+	if(screen.width >= 1130) return;
 	getById("mainHeader").style.marginRight = "0";
   	getById("mainNav").style.width = "0";
   	getById("mainBody").style.marginRight = "0";
