@@ -124,6 +124,43 @@ html {
 .nav_drawer_icon_div {
 	transition-duration: 500ms;
 }
+
+
+
+.listnav ul {
+	margin-left: 0%;
+    margin-right: 1%;
+	display: inline-block;
+	list-style-type: none;
+}
+.listnav ul li {
+	float: left;
+}
+.listnav ul li a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 32px;
+	color: #818181;
+	display: block;
+	font-family: 'Arial Verdana', sans-serif;
+	transition-property: color;
+	transition-duration: 300ms;
+}
+.listnav .closebtn {
+	display: none;
+}
+.listnav {
+	padding-top: unset;
+	right: unset;
+	top: unset;
+	height: 55px;
+	width: 100%;
+	position: fixed;
+	background-color: #E8E8E8;
+	transition-duration: 500ms;
+	overflow: hidden;
+    text-align: center;
+}
 @media screen and (max-width:319px) {
 	.header div p {
 		margin: 5px;
@@ -275,40 +312,6 @@ html {
 		padding-top: 5px;
 		height: 55px;
 		transition-duration: 300ms;
-	}
-	.sidenav ul {
-		margin-left: 0%;
-    	margin-right: 1%;
-		display: inline-block;
-		list-style-type: none;
-	}
-	.sidenav ul li {
-		float: left;
-	}
-	.sidenav ul li a {
-		padding: 8px 8px 8px 32px;
-		text-decoration: none;
-		font-size: 32px;
-		color: #818181;
-		display: block;
-		font-family: 'Arial Verdana', sans-serif;
-		transition-property: color;
-		transition-duration: 300ms;
-	}
-	.sidenav .closebtn {
-		display: none;
-	}
-	.sidenav {
-		padding-top: unset;
-		right: unset;
-		top: unset;
-		height: 55px;
-		width: 100%;
-		position: fixed;
-		background-color: #E8E8E8;
-		transition-duration: 500ms;
-		overflow: hidden;
-    	text-align: center;
 	}
 	.main_body_container {
 		margin-top: 77px;

@@ -10,6 +10,9 @@ function getById(id) {
 function getByClass(className) {
 	return document.getElementsByClassName(className);
 }
+function getRandom() {
+  	return Math.random();
+}
 
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
@@ -36,33 +39,25 @@ function getCookie(cname) {
 function updateHeight() {
 	if(isDarkMode != getCookie("isDarkMode")) toggleDarkMode();
 	if(window.innerWidth < 1130) {
-		if(usingBigScreen) {
-			getById("mainNav").classList.remove("listnav");
-			getById("mainNav").classList.add("sidenav");
-		}
 		usingBigScreen = false;
-		if(getById("mainNav").style.height == "100%") return;
-		getById("mainNav").style.height = "100%";
+		getById("mainNav").classList.remove("listnav");
+		getById("mainNav").classList.add("sidenav");
+		getById("mainNav").style.height = "0%";
+		getById("mainNav").style.width = "0px";
 		getById("mainNav").style.backgroundColor = isDarkMode ? "#111" : "#E8E8E8";
 	}
 	else {
-		if(!usingBigScreen) {
-			getById("mainNav").classList.remove("sidenav");
-			getById("mainNav").classList.add("listnav");
-		}
+		if(!usingBigScreen) closeNav();
 		usingBigScreen = true;
-		if(getById("mainNav").style.height == "55px") return;
-		getById("mainNav").style.height = "55px";
+		getById("mainNav").classList.remove("sidenav");
+		getById("mainNav").classList.add("listnav");
+		if(!navIsClosed) getById("mainNav").style.height = "55px";
+		getById("mainNav").style.width = "100%";
 		getById("mainNav").style.backgroundColor = isDarkMode ? "#111" : "#E8E8E8";
 	}
-	navIsClosed = false;
 }
 
-function onLoadFunction() {
-	initializeTheme();
-	updateHeight();
-	window.onresize = updateHeight();
-}
+
 
 function openNav() {
 	if(usingBigScreen) {
@@ -91,6 +86,7 @@ function closeNav() {
 	if(usingBigScreen) return;
 	getById("mainHeader").style.marginRight = "0";
 	getById("mainNav").style.width = "0";
+	getById("mainNav").style.height = "0";
 	getById("mainBody").style.marginRight = "0";
 	getById("mainBody").style.marginLeft = "0";
 	getById("navDrawerIcon").setAttribute('style','transform:rotate(0deg)');
@@ -99,7 +95,7 @@ function closeNav() {
 
 function toggleDarkMode() {
 	isDarkMode = !isDarkMode;
-	setCookie("isDarkMode", isDarkMode, 712);
+	setCookie("isDarkMode", isDarkMode, 750);
 	document.querySelector("meta[name=theme-color]").setAttribute("content", isDarkMode ? "#111" : "#E8E8E8");
 	getById("mainHeader").style.backgroundColor = isDarkMode ? "#111" : "#E8E8E8";
 	getById("navDrawerIcon").classList.toggle("dark-mode-foreground-svg");
@@ -119,4 +115,8 @@ function toggleDarkMode() {
 		menuItems[i].classList.toggle("menu-item-dark");
 	}
 	closeNav();
+}
+
+function onLoadFunction() {
+	updateHeight();
 }
