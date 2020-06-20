@@ -1,7 +1,7 @@
+var usingBigScreen = true;
 var letterSpacing = "20px";
 var isDarkMode = false;
 var navIsClosed = false;
-var navItemHoverColor = "white";
 
 
 function getById(id) {
@@ -11,20 +11,68 @@ function getByClass(className) {
 	return document.getElementsByClassName(className);
 }
 
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
 function updateHeight() {
-	if(window.innerWidth < 1130) getById("mainNav").style.height = "100%";
-	else getById("mainNav").style.height = "55px";
+	if(isDarkMode != getCookie("isDarkMode")) toggleDarkMode();
+	if(window.innerWidth < 1130) {
+		if(usingBigScreen) {
+			getById("mainNav").classList.remove("listnav");
+			getById("mainNav").classList.add("sidenav");
+		}
+		usingBigScreen = false;
+		if(getById("mainNav").style.height == "100%") return;
+		getById("mainNav").style.height = "100%";
+		getById("mainNav").style.backgroundColor = isDarkMode ? "#111" : "#E8E8E8";
+	}
+	else {
+		if(!usingBigScreen) {
+			getById("mainNav").classList.remove("sidenav");
+			getById("mainNav").classList.add("listnav");
+		}
+		usingBigScreen = true;
+		if(getById("mainNav").style.height == "55px") return;
+		getById("mainNav").style.height = "55px";
+		getById("mainNav").style.backgroundColor = isDarkMode ? "#111" : "#E8E8E8";
+	}
 	navIsClosed = false;
 }
 
-function onLoad() {
+function onLoadFunction() {
+	initializeTheme();
+	updateHeight();
 	window.onresize = updateHeight();
 }
 
 function openNav() {
-	if(window.innerWidth > 1129) {
-		if(navIsClosed) getById("mainNav").style.height = "55px";
-		else getById("mainNav").style.height = "0px";
+	if(usingBigScreen) {
+		if(navIsClosed) {
+			getById("mainNav").style.height = "55px";
+			getById("mainBody").style.marginTop = "77px";
+		} else {
+			getById("mainNav").style.height = "0px";
+			getById("mainBody").style.marginTop = "22px";
+		}
 		navIsClosed = !navIsClosed;
 		return;
 	}
@@ -40,20 +88,18 @@ function openNav() {
 }
 
 function closeNav() {
-	if(window.innerWidth > 1129) return;
+	if(usingBigScreen) return;
 	getById("mainHeader").style.marginRight = "0";
 	getById("mainNav").style.width = "0";
 	getById("mainBody").style.marginRight = "0";
 	getById("mainBody").style.marginLeft = "0";
 	getById("navDrawerIcon").setAttribute('style','transform:rotate(0deg)');
 	getById("navDrawerIconDiv").setAttribute('style','margin-top:-0px');
-	setTimeout(() => { 
-		getById("headerText").style.letterSpacing = letterSpacing;
-	}, 200);
 }
 
 function toggleDarkMode() {
 	isDarkMode = !isDarkMode;
+	setCookie("isDarkMode", isDarkMode, 712);
 	document.querySelector("meta[name=theme-color]").setAttribute("content", isDarkMode ? "#111" : "#E8E8E8");
 	getById("mainHeader").style.backgroundColor = isDarkMode ? "#111" : "#E8E8E8";
 	getById("navDrawerIcon").classList.toggle("dark-mode-foreground-svg");
