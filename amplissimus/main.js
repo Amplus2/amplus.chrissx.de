@@ -35,9 +35,15 @@ function getCookie(cname) {
   }
   return "";
 }
+function getTheme() {
+	var darkModeCookie = getCookie("isDarkMode");
+	if(darkModeCookie.trim() == "true") return true;
+	else if(darkModeCookie.trim() == "false") return false;
+	else return false;
+}
 
 function updateHeight() {
-	if(isDarkMode != getCookie("isDarkMode")) toggleDarkMode();
+	if(isDarkMode != getTheme()) toggleDarkMode();
 	if(window.innerWidth < 1130) {
 		usingBigScreen = false;
 		getById("mainNav").classList.remove("listnav");
