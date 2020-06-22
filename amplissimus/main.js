@@ -135,5 +135,5 @@ function onLoadFunction() {
 		getById("mainBody").style.transitionDuration = "500ms";
 	}, 10);
 	updateHeight();
-	setTimeout(() => {openNav()}, 75);
+	setTimeout(() => {openNav()}, 500);
 }
