@@ -53,6 +53,7 @@ function updateHeight() {
 		getById("mainNav").style.backgroundColor = isDarkMode ? "#111" : "#E8E8E8";
 	}
 	else {
+		getById("mainNav").style.transitionDuration = "0ms";
 		if(!usingBigScreen) closeNav();
 		usingBigScreen = true;
 		getById("mainNav").classList.remove("sidenav");
@@ -60,6 +61,7 @@ function updateHeight() {
 		if(!navIsClosed) getById("mainNav").style.height = "55px";
 		getById("mainNav").style.width = "100%";
 		getById("mainNav").style.backgroundColor = isDarkMode ? "#111" : "#E8E8E8";
+		setTimeout(() => {getById("mainNav").style.transitionDuration = "300ms"}, 10);
 	}
 }
 
@@ -97,6 +99,7 @@ function closeNav() {
 	getById("mainBody").style.marginLeft = "0";
 	getById("navDrawerIcon").setAttribute('style','transform:rotate(0deg)');
 	getById("navDrawerIconDiv").setAttribute('style','margin-top:-0px');
+	setTimeout(() => {getById("headerText").style.letterSpacing = letterSpacing}, 270);
 }
 
 function toggleDarkMode() {
@@ -124,5 +127,7 @@ function toggleDarkMode() {
 }
 
 function onLoadFunction() {
+	
 	updateHeight();
+	
 }
