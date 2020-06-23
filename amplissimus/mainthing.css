@@ -89,9 +89,6 @@ html {
   	padding-top: 60px;
   	transition-duration: 500ms;
 }
-.header div:hover p {
-	letter-spacing: 0px;
-}
 .main_body_container {
 	margin-left: 0px;
 	height: 100%;
