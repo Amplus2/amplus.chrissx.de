@@ -12,13 +12,14 @@
       "versionDescription": "Fixed a bug, many code quality improvements and more testing.",
       "downloadURL": "https://github.com/Ampless/Amplessimus/releases/download/1.3.4.8537/1.3.4.ipa",
       "localizedDescription": "Amplessimus is an alternative to the \"Amplissimus\" app.",
-      "iconURL": "https://github.com/Ampless/Amplessimus/raw/master/amplissimus/assets/images/logo.png",
+      "iconURL": "https://github.com/Ampless/Amplessimus/raw/master/assets/images/logo.png",
       "tintColor": "954BF4",
       "size": 16801175,
       "screenshotURLs": [
-        "https://github.com/Ampless/ampless.chrissx.de/raw/master/screenshots/IMG_4539.PNG",
-        "https://github.com/Ampless/ampless.chrissx.de/raw/master/screenshots/IMG_4540.PNG",
-        "https://github.com/Ampless/ampless.chrissx.de/raw/master/screenshots/IMG_4541.PNG"
+        "https://github.com/Ampless/ampless.chrissx.de/raw/master/screenshots/IMG_4789.PNG",
+        "https://github.com/Ampless/ampless.chrissx.de/raw/master/screenshots/IMG_4790.PNG",
+        "https://github.com/Ampless/ampless.chrissx.de/raw/master/screenshots/IMG_4791.PNG",
+        "https://github.com/Ampless/ampless.chrissx.de/raw/master/screenshots/IMG_4793.PNG"
       ]
     }
   ],
@@ -28,7 +29,7 @@
       "identifier": "amplessimus-goes-altstore",
       "caption": "Amplessimus is now available through the AltStore Beta.",
       "tintColor": "954BF4",
-      "imageURL": "https://github.com/Ampless/Amplessimus/raw/master/amplissimus/assets/images/logo.png",
+      "imageURL": "https://github.com/Ampless/Amplessimus/raw/master/assets/images/logo.png",
       "date": "2020-07-18T00:00:00-02:00",
       "notify": false
     }
