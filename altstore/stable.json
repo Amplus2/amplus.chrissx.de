@@ -7,14 +7,14 @@
       "name": "Amplessimus",
       "bundleIdentifier": "de.ampless.amplessimus",
       "developerName": "Ampless",
-      "version": "1.3.4",
-      "versionDate": "2020-07-06T00:00:00+02:00",
-      "versionDescription": "Fixed a bug, many code quality improvements and more testing.",
-      "downloadURL": "https://github.com/Ampless/Amplessimus/releases/download/1.3.4.8537/1.3.4.ipa",
+      "version": "2.0.0",
+      "versionDate": "2020-07-20T23:00:00+02:00",
+      "versionDescription": "Many big improvements.",
+      "downloadURL": "https://github.com/Ampless/Amplessimus/releases/download/2.0.0.5864b3e/2.0.0.ipa",
       "localizedDescription": "Amplessimus is an alternative to the \"Amplissimus\" app.",
       "iconURL": "https://github.com/Ampless/Amplessimus/raw/master/assets/images/logo.png",
       "tintColor": "954BF4",
-      "size": 16801175,
+      "size": 16807545,
       "screenshotURLs": [
         "https://github.com/Ampless/ampless.chrissx.de/raw/master/screenshots/IMG_4789.PNG",
         "https://github.com/Ampless/ampless.chrissx.de/raw/master/screenshots/IMG_4790.PNG",
@@ -27,10 +27,10 @@
     {
       "title": "Amplessimus goes AltStore!",
       "identifier": "amplessimus-goes-altstore",
-      "caption": "Amplessimus is now available through the AltStore Beta.",
+      "caption": "Amplessimus 2.0.0 is now available through the AltStore Beta.",
       "tintColor": "954BF4",
       "imageURL": "https://github.com/Ampless/Amplessimus/raw/master/assets/images/logo.png",
-      "date": "2020-07-18T00:00:00-02:00",
+      "date": "2020-07-20T23:00:00+02:00",
       "notify": false
     }
   ]
