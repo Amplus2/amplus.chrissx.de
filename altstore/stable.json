@@ -12,7 +12,7 @@
       "versionDescription": "Fixed a misparsed subject.",
       "downloadURL": "https://github.com/Ampless/Amplessimus/releases/download/2.1.3.c010062/2.1.3.ipa",
       "localizedDescription": "Amplessimus is an alternative to the \"Amplissimus\" app.",
-      "iconURL": "https://github.com/Ampless/Amplessimus/raw/master/assets/images/logo.png",
+      "iconURL": "https://github.com/Ampless/Amplessimus/raw/master/assets/logo.png",
       "tintColor": "954BF4",
       "size": 16434357,
       "screenshotURLs": [
@@ -29,7 +29,7 @@
       "identifier": "amplessimus-21-released",
       "caption": "Amplessimus 2.1 is now available from the AltStore Beta.",
       "tintColor": "954BF4",
-      "imageURL": "https://github.com/Ampless/Amplessimus/raw/master/assets/images/logo.png",
+      "imageURL": "https://github.com/Ampless/Amplessimus/raw/master/assets/logo.png",
       "date": "2020-08-07T21:00:00+02:00",
       "notify": true
     },
@@ -38,7 +38,7 @@
       "identifier": "amplessimus-goes-altstore",
       "caption": "Amplessimus 2 is now available through the AltStore Beta.",
       "tintColor": "954BF4",
-      "imageURL": "https://github.com/Ampless/Amplessimus/raw/master/assets/images/logo.png",
+      "imageURL": "https://github.com/Ampless/Amplessimus/raw/master/assets/logo.png",
       "date": "2020-07-20T23:00:00+02:00",
       "notify": false
     }
