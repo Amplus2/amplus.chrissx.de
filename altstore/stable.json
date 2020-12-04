@@ -7,14 +7,14 @@
       "name": "Amplessimus",
       "bundleIdentifier": "de.ampless.Amplessimus",
       "developerName": "Ampless",
-      "version": "2.3.0",
-      "versionDate": "2020-10-03T18:00:00+02:00",
-      "versionDescription": "Untis 2021 support and a few minor tweaks.",
-      "downloadURL": "https://github.com/Ampless/Amplessimus/releases/download/2.3.0.eaa8f83/2.3.0.ipa",
+      "version": "2.5.1",
+      "versionDate": "2020-11-28T18:00:00+01:00",
+      "versionDescription": "Minor bug fixes and other improvements.",
+      "downloadURL": "https://github.com/Ampless/Amplessimus/releases/download/2.5.1.497b845/2.5.1.ipa",
       "localizedDescription": "Amplessimus is an alternative to the \"Amplissimus\" app.",
       "iconURL": "https://github.com/Ampless/Amplessimus/raw/master/assets/logo.png",
       "tintColor": "954BF4",
-      "size": 16255932,
+      "size": 7000000,
       "screenshotURLs": [
         "https://github.com/Ampless/ampless.chrissx.de/raw/master/screenshots/IMG_4789.PNG",
         "https://github.com/Ampless/ampless.chrissx.de/raw/master/screenshots/IMG_4790.PNG",
@@ -25,11 +25,11 @@
   ],
   "news": [
     {
-      "title": "Amplessimus 2.3 released!",
-      "identifier": "amplessimus-23-released",
-      "caption": "Amplessimus 2.3 is now available from the AltStore Beta.",
+      "title": "Amplessimus 2.5 released!",
+      "identifier": "amplessimus-25-released",
+      "caption": "Amplessimus 2.5 is now available from AltStore.",
       "tintColor": "954BF4",
-      "date": "2020-10-03T18:00:00+02:00",
+      "date": "2020-11-10T18:00:00+01:00",
       "notify": true
     },
     {
