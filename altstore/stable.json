@@ -5,31 +5,29 @@
   "apps": [
     {
       "name": "Amplessimus",
-      "bundleIdentifier": "de.ampless.Amplessimus",
+      "bundleIdentifier": "de.ampless.amplessimus",
       "developerName": "Ampless",
-      "version": "2.5.1",
-      "versionDate": "2020-11-28T18:00:00+01:00",
-      "versionDescription": "Minor bug fixes and other improvements.",
-      "downloadURL": "https://github.com/Ampless/Amplessimus/releases/download/2.5.1.497b845/2.5.1.ipa",
+      "version": "3.0.22",
+      "versionDate": "2020-12-20T18:00:00+01:00",
+      "versionDescription": "Many big improvements to the subject parser, UI design, substitution sorting and much more.",
+      "downloadURL": "https://github.com/Ampless/Amplessimus/releases/download/3.0.22/3.0.ipa",
       "localizedDescription": "Amplessimus is an alternative to the \"Amplissimus\" app.",
       "iconURL": "https://github.com/Ampless/Amplessimus/raw/master/assets/logo.png",
       "tintColor": "954BF4",
-      "size": 7000000,
+      "size": 6400000,
       "screenshotURLs": [
-        "https://github.com/Ampless/ampless.chrissx.de/raw/master/screenshots/IMG_4789.PNG",
-        "https://github.com/Ampless/ampless.chrissx.de/raw/master/screenshots/IMG_4790.PNG",
-        "https://github.com/Ampless/ampless.chrissx.de/raw/master/screenshots/IMG_4791.PNG",
-        "https://github.com/Ampless/ampless.chrissx.de/raw/master/screenshots/IMG_4793.PNG"
+        "https://github.com/Ampless/ampless.chrissx.de/raw/master/screenshots/2021-01-02-16.26.04.png",
+        "https://github.com/Ampless/ampless.chrissx.de/raw/master/screenshots/2021-01-02-16.26.14.png"
       ]
     }
   ],
   "news": [
     {
-      "title": "Amplessimus 2.5 released!",
-      "identifier": "amplessimus-25-released",
-      "caption": "Amplessimus 2.5 is now available from AltStore.",
+      "title": "Amplessimus 3.0 released!",
+      "identifier": "amplessimus-30-released",
+      "caption": "Amplessimus 3.0 is now available from AltStore.",
       "tintColor": "954BF4",
-      "date": "2020-11-10T18:00:00+01:00",
+      "date": "2020-12-20T18:00:00+01:00",
       "notify": true
     },
     {
