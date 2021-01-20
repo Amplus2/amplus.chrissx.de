@@ -7,14 +7,14 @@
       "name": "Amplessimus",
       "bundleIdentifier": "de.ampless.amplessimus",
       "developerName": "Ampless",
-      "version": "3.0.22",
-      "versionDate": "2020-12-20T18:00:00+01:00",
-      "versionDescription": "Many big improvements to the subject parser, UI design, substitution sorting and much more.",
-      "downloadURL": "https://github.com/Ampless/Amplessimus/releases/download/3.0.22/3.0.ipa",
+      "version": "3.3.89",
+      "versionDate": "2020-01-20T08:00:00+01:00",
+      "versionDescription": "A few bug fixes and code quality improvements.",
+      "downloadURL": "https://github.com/Ampless/Amplessimus/releases/download/3.3.89/3.3.89.ipa",
       "localizedDescription": "Amplessimus is an alternative to the \"Amplissimus\" app.",
       "iconURL": "https://github.com/Ampless/Amplessimus/raw/master/assets/logo.png",
       "tintColor": "954BF4",
-      "size": 6400000,
+      "size": 6300000,
       "screenshotURLs": [
         "https://github.com/Ampless/ampless.chrissx.de/raw/master/screenshots/2021-01-02-16.26.04.png",
         "https://github.com/Ampless/ampless.chrissx.de/raw/master/screenshots/2021-01-02-16.26.14.png"
@@ -23,11 +23,11 @@
   ],
   "news": [
     {
-      "title": "Amplessimus 3.0 released!",
-      "identifier": "amplessimus-30-released",
-      "caption": "Amplessimus 3.0 is now available from AltStore.",
+      "title": "Amplessimus 3.3 released!",
+      "identifier": "amplessimus-33-released",
+      "caption": "Amplessimus 3.3 is now available from AltStore.",
       "tintColor": "954BF4",
-      "date": "2020-12-20T18:00:00+01:00",
+      "date": "2020-01-20T08:00:00+01:00",
       "notify": true
     },
     {
