@@ -8,7 +8,7 @@
       "bundleIdentifier": "de.ampless.amplessimus",
       "developerName": "Ampless",
       "version": "3.3.89",
-      "versionDate": "2020-01-20T08:00:00+01:00",
+      "versionDate": "2021-01-20T08:00:00+01:00",
       "versionDescription": "A few bug fixes and code quality improvements.",
       "downloadURL": "https://github.com/Ampless/Amplessimus/releases/download/3.3.89/3.3.89.ipa",
       "localizedDescription": "Amplessimus is an alternative to the \"Amplissimus\" app.",
@@ -27,7 +27,7 @@
       "identifier": "amplessimus-33-released",
       "caption": "Amplessimus 3.3 is now available from AltStore.",
       "tintColor": "954BF4",
-      "date": "2020-01-20T08:00:00+01:00",
+      "date": "2021-01-20T08:00:00+01:00",
       "notify": true
     },
     {
