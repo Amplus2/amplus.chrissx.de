@@ -7,10 +7,10 @@
       "name": "Amplessimus",
       "bundleIdentifier": "de.ampless.amplessimus",
       "developerName": "Ampless",
-      "version": "3.6.22",
-      "versionDate": "2021-03-14T00:00:00+01:00",
-      "versionDescription": "Reintroduced caching for the new API and fixed many minor bugs.",
-      "downloadURL": "https://github.com/Ampless/Amplessimus/releases/download/3.6.22/3.6.22.ipa",
+      "version": "3.7.2",
+      "versionDate": "2021-03-24T02:00:00+01:00",
+      "versionDescription": "The last version of Amplessimus – Final Bugfixes",
+      "downloadURL": "https://github.com/Ampless/Amplessimus/releases/download/3.7.2/3.7.2.ipa",
       "localizedDescription": "Amplessimus is an alternative to the \"Amplissimus\" app.",
       "iconURL": "https://github.com/Ampless/Amplessimus/raw/master/assets/logo.png",
       "tintColor": "954BF4",
@@ -23,11 +23,11 @@
   ],
   "news": [
     {
-      "title": "Amplessimus 3.6 released!",
-      "identifier": "amplessimus-36-released",
-      "caption": "Amplessimus 3.6 is now available from AltStore.",
+      "title": "Amplessimus 3.7 released!",
+      "identifier": "amplessimus-37-released",
+      "caption": "Amplessimus 3.7 is now available from AltStore.",
       "tintColor": "954BF4",
-      "date": "2021-03-14T00:00:00+01:00",
+      "date": "2021-03-24T02:00:00+01:00",
       "notify": true
     },
     {
