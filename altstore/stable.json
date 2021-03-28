@@ -7,10 +7,10 @@
       "name": "Amplissimus",
       "bundleIdentifier": "de.amplus.amplissimus",
       "developerName": "Amplus",
-      "version": "3.42.69",
-      "versionDate": "2021-03-24T02:00:00+01:00",
-      "versionDescription": "The last version of Amplessimus – Final Bugfixes",
-      "downloadURL": "https://github.com/Amplus2/Amplissimus/releases/download/3.7.2/3.7.2.ipa",
+      "version": "4.0.76",
+      "versionDate": "2021-03-28T18:00:00+01:00",
+      "versionDescription": "Changed the design, added new features, Amplissimus is back!",
+      "downloadURL": "https://github.com/Amplus2/Amplissimus/releases/download/4.0.76/4.0.76.ipa",
       "localizedDescription": "Amplissimus is an alternative to the \"Amplissimus\" app.",
       "iconURL": "https://github.com/Amplus2/Amplissimus/raw/master/assets/logo.png",
       "tintColor": "954BF4",
@@ -27,7 +27,7 @@
       "identifier": "amplissimus-40-released",
       "caption": "Amplissimus 4.0 is now available from AltStore.",
       "tintColor": "954BF4",
-      "date": "2021-04-14T02:00:00+01:00",
+      "date": "2021-03-28T18:00:00+01:00",
       "notify": true
     },
     {
