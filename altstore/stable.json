@@ -7,11 +7,11 @@
       "name": "Amplissimus",
       "bundleIdentifier": "de.amplus.amplissimus",
       "developerName": "Amplus",
-      "version": "4.0.76",
-      "versionDate": "2021-03-28T18:00:00+01:00",
-      "versionDescription": "Changed the design, added new features, Amplissimus is back!",
-      "downloadURL": "https://github.com/Amplus2/Amplissimus/releases/download/4.0.76/4.0.76.ipa",
-      "localizedDescription": "Amplissimus is an alternative to the \"Amplissimus\" app.",
+      "version": "4.1.42",
+      "versionDate": "2021-04-05T11:00:00+02:00",
+      "versionDescription": "Fixed many smaller bugs and improved the code.",
+      "downloadURL": "https://github.com/Amplus2/Amplissimus/releases/download/4.1.42/4.1.42.ipa",
+      "localizedDescription": "Amplissimus is an alternative to the \"DSBMobile\" app.",
       "iconURL": "https://github.com/Amplus2/Amplissimus/raw/master/assets/logo.png",
       "tintColor": "954BF4",
       "size": 6600000,
@@ -23,11 +23,11 @@
   ],
   "news": [
     {
-      "title": "Amplissimus 4.0 released!",
-      "identifier": "amplissimus-40-released",
-      "caption": "Amplissimus 4.0 is now available from AltStore.",
+      "title": "Amplissimus 4.1 released!",
+      "identifier": "amplissimus-41-released",
+      "caption": "Amplissimus 4.1 is now available from AltStore.",
       "tintColor": "954BF4",
-      "date": "2021-03-28T18:00:00+01:00",
+      "date": "2021-04-05T11:00:00+02:00",
       "notify": true
     },
     {
@@ -36,7 +36,7 @@
       "caption": "Amplissimus 4 is now available through the AltStore Beta.",
       "tintColor": "954BF4",
       "imageURL": "https://github.com/Amplus2/Amplissimus/raw/master/assets/logo.png",
-      "date": "2021-04-01T00:00:00+01:00",
+      "date": "2021-03-28T18:00:00+01:00",
       "notify": false
     }
   ]
